@@ -8,6 +8,8 @@ class Settings(BaseSettings):
     n8n_webhook_url: str | None = None
     OPENAI_API_KEY: str | None = None
     GOOGLE_API_KEY: str | None = None
+    REDIS_URL_LOCAL: str | None = None
+    REDIS_BACKEND_LOCAL: str | None = None
 
     class Config:
         env_file = ".env"
